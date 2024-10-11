@@ -1,7 +1,7 @@
 # Ta-Da! 🎉  
 **A Simple To-Do App with a Playful Twist**
 
-Welcome to **Ta-Da!** – the to-do list app that makes task management feel like a little celebration every time you tick something off! ✨
+Welcome to **[Ta-Da!](https://ak-2045.github.io/JavaScript-Project-2-ToDo-App/)** – the to-do list app that makes task management feel like a little celebration every time you tick something off! ✨
 
 # Inspiration
 This project is heavily inspired by GreatStack. Check out their awesome tutorial video here: [GreatStack Tutorial](https://youtu.be/G0jO8kUrg-I?list=PLjwm_8O3suyOgDS_Z8AWbbq3zpCmR-WE9)
