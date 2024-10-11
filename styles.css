@@ -1,0 +1,168 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+.container
+{
+    width: 100%;
+    min-height: 100vh;
+    /* Sets the height of the background to minimum height of the view port */
+    /* Viewport is the display area of the entire website. vh = viewport height */
+    /* Min height is covering entire screen, however can grow bigger */
+
+    background: linear-gradient(135deg,#153677,#4e085f);
+    padding: 10px;
+}
+
+.todo-app
+{
+    width:100%;
+    max-width:540px;
+
+    background: #fff;
+
+    margin:100px auto 20px;
+    /*Top Margin is 100px*/
+    /* Left and Right Margin is automatic. 
+    It will balance the margin on each side to align the box in the center */
+    /*Bottom Margin is 20 px*/
+
+    padding: 40px 30px 70px;
+    /* Top Padding is 40px */
+    /* On the sides it is 30 px each */
+    /* Bottom will be 70px */
+    
+    border-radius: 10px;
+}
+
+.todo-app h2
+{
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.todo-app h2 img
+{
+    width: 30px;
+    margin-left: 10px;
+}
+
+.row
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:#edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+.row input
+{
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    flex:1;
+    padding: 10;
+    font-weight: 14px;
+}
+
+button
+{
+border:none;
+outline:none;
+padding:16px 50px;
+background: #ff5945;
+color:#fff;
+border-radius: 40px;
+font-size: 16px;
+cursor:pointer;
+}
+
+ul li
+{
+list-style: none;
+
+font-size: 17px;
+
+padding:12px 8px 12px 50px;
+
+user-select: none;
+/* When applied it disables the ability to highlight or copy the content of the specified element.*/
+/* Used to protet the content or improve user experience by avoiding accidental selection */
+
+cursor:pointer;
+position: relative;
+}
+
+ul li::before
+{
+    content:'';
+    /* CSS property used with the ::before and ::after pseudo elements */
+    /* It inserts an empty string into the content of the element which can be useful for adding custom styles
+    or effects without introducing any actual text or other content */
+
+    position: absolute;
+    /* It allows an an element to be positioned relative to its closest positioned ancestor, 
+    the nearest ancestor with a position value other than static */
+
+    height: 28px;
+    width: 28px;
+    
+    border-radius: 50%;
+    
+    background-image: url(images/unchecked.png);
+    
+    background-size: cover;
+    /* Property in CSS used to scale the background image of an element 
+    so that it completely covers the element's area, while maintaining the image aspect ratio */
+
+    background-position: center;
+    
+    top: 6px;
+    left:8px;
+}
+
+ul li.checked
+{
+    color:#555;
+    text-decoration: line-through;
+
+}
+
+ul li.checked::before
+{
+
+background-image: url(images/checked.png);
+
+}
+
+ul li span
+{
+
+position: absolute;
+right: 0;
+top: 5px;
+width: 40px;
+height: 40px;
+font-size: 22px;
+color: #555;
+line-height: 40px;
+text-align: center;
+border-radius: 50%;
+
+}
+
+ul li span:hover
+{
+
+background: #edeef0
+
+}
